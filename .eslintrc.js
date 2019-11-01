@@ -6,12 +6,16 @@ module.exports = {
   extends: [
     "eslint:recommended",
     "standard",
+    "plugin:@typescript-eslint/eslint-recommended",
+    "plugin:@typescript-eslint/recommended",
     "plugin:prettier/recommended",
     "plugin:react/recommended",
     "prettier",
+    "prettier/@typescript-eslint",
     "prettier/standard",
     "prettier/react"
   ],
+  parser: "@typescript-eslint/parser",
   globals: {
     Atomics: "readonly",
     SharedArrayBuffer: "readonly"
@@ -23,7 +27,7 @@ module.exports = {
     ecmaVersion: 2018,
     sourceType: "module"
   },
-  plugins: ["standard", "prettier", "react"],
+  plugins: ["standard", "prettier", "react", "@typescript-eslint"],
   rules: {
     "prettier/prettier": "error"
   },
