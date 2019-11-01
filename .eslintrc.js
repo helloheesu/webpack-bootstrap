@@ -3,12 +3,19 @@ module.exports = {
     browser: true,
     es6: true
   },
-  extends: ["standard"],
+  extends: [
+    "eslint:recommended",
+    "standard",
+    "plugin:prettier/recommended",
+    "plugin:react/recommended",
+    "prettier",
+    "prettier/standard",
+    "prettier/react"
+  ],
   globals: {
     Atomics: "readonly",
     SharedArrayBuffer: "readonly"
   },
-  parser: "@typescript-eslint/parser",
   parserOptions: {
     ecmaFeatures: {
       jsx: true
@@ -16,6 +23,13 @@ module.exports = {
     ecmaVersion: 2018,
     sourceType: "module"
   },
-  plugins: ["react", "@typescript-eslint"],
-  rules: {}
+  plugins: ["standard", "prettier", "react"],
+  rules: {
+    "prettier/prettier": "error"
+  },
+  settings: {
+    react: {
+      version: "detect"
+    }
+  }
 };
