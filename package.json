@@ -5,7 +5,7 @@
   "main": "src/index.js",
   "scripts": {
     "build": "webpack --mode='production'",
-    "start": "webpack-dev-server"
+    "start": "nodemon --watch webpack.config.js ./node_modules/.bin/webpack-dev-server"
   },
   "keywords": [],
   "author": "helloheesu",
@@ -16,6 +16,7 @@
     "babel-loader": "^8.0.6",
     "clean-webpack-plugin": "^3.0.0",
     "html-webpack-plugin": "^3.2.0",
+    "nodemon": "^1.19.1",
     "webpack": "^4.39.3",
     "webpack-cli": "^3.3.7",
     "webpack-dev-server": "^3.8.0"

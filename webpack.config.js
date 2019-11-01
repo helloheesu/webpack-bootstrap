@@ -23,9 +23,6 @@ module.exports = {
       }
     })
   ],
-  devServer: {
-    open: true
-  },
   resolve: {
     extensions: [".jsx", ".js"]
   }
