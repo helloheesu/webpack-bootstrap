@@ -6,7 +6,8 @@
   "scripts": {
     "test": "jest",
     "build": "webpack --mode='production'",
-    "start": "nodemon --watch ./ ./node_modules/.bin/webpack-dev-server"
+    "start": "nodemon --watch ./ ./node_modules/.bin/webpack-dev-server",
+    "lint": "prettier --write '**/*' & eslint --fix '*.js'"
   },
   "keywords": [],
   "author": "helloheesu",
