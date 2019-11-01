@@ -2,9 +2,15 @@
   "name": "webpack-bootstrap",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
-  "scripts": {},
+  "main": "src/index.js",
+  "scripts": {
+    "build": "webpack"
+  },
   "keywords": [],
   "author": "helloheesu",
-  "license": "ISC"
+  "license": "ISC",
+  "devDependencies": {
+    "webpack": "^4.39.3",
+    "webpack-cli": "^3.3.7"
+  }
 }
